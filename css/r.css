@@ -1,0 +1,144 @@
+@media only screen and (min-width:300px) and (max-width: 640px) {
+
+    section {
+        padding: 30px 0;
+    }
+    
+    .head .logo img{
+        max-width: 100px;
+    }
+
+    .head__inner, .head{
+        height: 80px;
+    }
+
+    .banner-image:before{
+        padding-top: 56.25%
+    }
+    
+    #menuMobile{
+        display:block;
+    }
+    
+
+    .fix-menu{
+        display: none;
+    }
+
+    .fix-menu-mobile{
+        background: #FFF;
+        z-index: 10;
+    }
+
+    .fix-menu-mobile.fix-menu-mobile__js-open {
+        display: block;
+        z-index: 20;
+        margin: 0 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        top: 70px;
+    }
+
+    .fix-menu__list > li {
+        border-top: solid 1px #ebebeb;
+        position: relative;
+    }
+
+    .fix-menu__list li a {
+        padding: 15px;
+        display: block;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .fix-menu__list .sub-menu ul li a {
+        padding-left: 60px;
+    }
+
+    .fix-menu__list .sub-menu > li a {
+        padding-left: 30px;
+    }
+
+    .fix-menu__list > li > a {
+        font-weight: bold;
+    }
+
+    .fix-menu__list ul {
+        display: none;
+    }
+
+    .fix-menu-mobile ul li button {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #363636;
+        border: none;
+        width: 50px;
+        height: 50px;
+        font-size: large;
+    }
+
+    .fix-menu-mobile ul li button:before {
+        content: '';
+        display: flex;
+        justify-content: center;
+    }
+
+    .collection-list li{
+        width: 100%;
+    }
+
+    .footer-list>li {
+        padding: 0 30px;
+        flex: 1 0 100%;
+        margin: 0 0 15px;
+    }
+
+}
+@media only screen and (min-width:640px) and (max-width:700px){
+
+}
+@media only screen and (min-width:700px) and (max-width:800px){
+
+}
+@media only screen and (min-width:800px) and (max-width:900px){
+
+}
+@media only screen and (min-width:300px) and (max-width: 900px){
+    
+}
+@media only screen and (min-width:900px) and (max-width:1024px){
+
+}
+@media only screen and (min-width:1024px) and (max-width:1200px){
+
+}
+
+@media only screen and (min-width:640px) and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    }
+
+    ul.f1>li>form>input[type=text]{
+        width: 50%;
+    }
+
+
+}
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+
+}
+@media only screen and (min-width:1024px) and (max-width:1600px) {
+
+
+
+}
+@media only screen and (min-width:1300px) and (max-width:1600px) {
+    .container{
+        width: 1200px;
+    }
+}
