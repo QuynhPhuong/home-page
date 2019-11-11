@@ -60,7 +60,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 112  | This campaign can't be upadted because its start date is same or before today | Không thể cập nhật chiến dịch này vì ngày bắt đầu chiến dịch xảy ra trước hoặc trùng với ngày hiện tại |
 | 200  | Permission denied. Only admin or company owner can request a balance | Chỉ quản trị viên hoặc quản lý công ty có quyền yêu cầu 1 số dư |
 | 201  | Total budget cannot be empty, zero or negative  | Tổng ngân sách không thể trống, bằng 0 hoặc âm |
-| 202  | Permisson denied. Only admin can update balance requests | Chỉ quản trị viên có quyền yêu cầu 1 số dư |
+| 202  | Permisson denied. Only admin can update balance requests | Chỉ quản trị viên có quyền sửa số dư |
 | 203  | Status can't be updated because the balance request has already been processed | Không thể cập nhật trạng thái số dư vì số dư đã hoạt động |
 | 204  | Balance request not found | Không tìm thấy số dư |
 | 205  | Invalid status. Possible values are APPROVED, DENIED | Trạng thái không hợp lệ. Các giá trị hợp lệ bao gồm APPROVED, DENIED |
