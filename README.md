@@ -15,21 +15,24 @@
  - npm start
 
 ## Environment Variables
-Make sure to create your empty database `mflix_local` (and `mflix_test` if you want `run npm test`) on your computer first if you are working locally. 
+Make sure to create your empty database `ezgift_local` (and `ezgift_test` if you want `run npm test`) on your computer first if you are working locally. 
 
 At the root of the project, create a `.env` and a `.env.test` with these values (note you need to have a different name for your test database):
 ```
 DB_USER=root
 DB_PASSWORD=root
 DB_HOST=localhost
-DB_NAME=mflix_local
+DB_NAME=ezgift_local
 DB_PORT=3306
-APP_NAME=MFLIX
+APP_NAME=EzGift
 JWT_SECRET=secret
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_S3_BUCKET=
 SERVER_PORT=3001
 ```
 ## Setup Database
-Run in Postman or in your browser to delete and setup all the tables in your database. Make sure to set the correct configuration for the database connection in `.env` and create the empty database `mflix_local`, `mflix_test`:
+Run in Postman or in your browser to delete and setup all the tables in your database. Make sure to set the correct configuration for the database connection in `.env` and create the empty database `ezgift_local`, `ezgift_test`:
 ```
 GET /mysql
 ```
@@ -99,7 +102,3 @@ Please import postman collection and environment to use it from the `<root>/post
 | 905  | Permission denied. Only admin or company owner can update clients | Chỉ quản trị viên và quản lý có quyền cập nhật khách hàng |
 | 1000  | Invalid file type. Possible types are CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT|  Loại file không hợp lệ. Các loại file hợp lệ là CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT |
 | 1001  | Permission denied. You can't download sheets from another companies | Bạn không thể tải sheets của công ty khác |
-
-
-
-
