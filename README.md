@@ -1,6 +1,6 @@
 # home-page
 
-| First Header  | Second Header |
+| Error code  | Description (EN) | Description (VI) |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| 101  | Permission denied| Không được cấp quyền |
+| 102  | Not authorized | Không được phép |
