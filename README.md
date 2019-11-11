@@ -1,3 +1,42 @@
+# EzGift API
+
+## Requirements
+ - MySQL
+ - Node 8.9.1 or higher
+ - Redis server
+## Installing
+ - npm i
+## Development
+ - npm run dev
+## Test
+ - npm test
+## Deployment
+ - npm run build
+ - npm start
+
+## Environment Variables
+Make sure to create your empty database `mflix_local` (and `mflix_test` if you want `run npm test`) on your computer first if you are working locally. 
+
+At the root of the project, create a `.env` and a `.env.test` with these values (note you need to have a different name for your test database):
+```
+DB_USER=root
+DB_PASSWORD=root
+DB_HOST=localhost
+DB_NAME=mflix_local
+DB_PORT=3306
+APP_NAME=MFLIX
+JWT_SECRET=secret
+SERVER_PORT=3001
+```
+## Setup Database
+Run in Postman or in your browser to delete and setup all the tables in your database. Make sure to set the correct configuration for the database connection in `.env` and create the empty database `mflix_local`, `mflix_test`:
+```
+GET /mysql
+```
+
+## Postman
+Please import postman collection and environment to use it from the `<root>/postman/` folder.
+```
 ## Error code Table
 
 | Error code  | Description (EN) | Description (VI) |
@@ -48,3 +87,5 @@
 | 145  | Agency name is invalid | Tên đại lý không hợp lệ |
 | 146  | Can not edit insertion order if it has been confirmed | Không thể sửa thông tin đơn hàng nếu nó đã được xác nhận |
 ```
+
+
