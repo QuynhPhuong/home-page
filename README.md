@@ -1,4 +1,5 @@
 # home-page
+```
 
 | Error code  | Description (EN) | Description (VI) |
 | ------------- | ------------- | ------------- | 
