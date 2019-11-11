@@ -36,7 +36,7 @@ GET /mysql
 
 ## Postman
 Please import postman collection and environment to use it from the `<root>/postman/` folder.
-```
+
 ## Error code Table
 
 | Error code  | Description (EN) | Description (VI) |
