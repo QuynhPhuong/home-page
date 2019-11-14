@@ -80,6 +80,12 @@ Please import postman collection and environment to use it from the `<root>/post
 | 506  | Duplicate email  | Trùng lặp email |
 | 507  | Confirm password does not match new password | Mật khẩu xác nhận không trùng mật khẩu mới |
 | 508  | Invalid password code | Mã mật khẩu không hợp lệ |
+| 509  | Partner admin can only create new partner admin or partner staff | Quản trị viên đối tác chỉ có thể tạo mới người dùng quản trị viên hoặc nhân viên bên mình |
+| 510  | Partner admin can only edit partner admin or partner staff | Quản trị viên đối tác chỉ có thể sửa người dùng là quản trị viên hoặc nhân viên bên mình |
+| 511  | You can't edit user from another company | Bạn không thể sửa thông tin người dùng của công ty khác |
+| 512  | Only partner admin can create new partner user | Chỉ quản trị viên đối tác có thể tạo mới người dùng đối tác |
+| 513  | The industry category is invalid | Danh mục ngành không hợp lệ |
+| 514  | Contract end date is invalid or missing. Correct format is YYYY-MM-DD | Ngày hết hạn hợp đồng không hợp lệ hoặc trống. Định dạng đúng là YYYY-MM-DD |
 | 600  | Permission denied. Only admin or Ad alpha financial can view the companies list | Chỉ quản trị viên hoặc quản lý tài chính của Ad alpha có quyền xem danh sách các công ty  |
 | 700  | Permission denied. Only admin or company owner can see this group | Chỉ quản trị viên hoặc quản lý công ty có quyền xem thông tin nhóm |
 | 701  | Permission denied. Only admin or company owner can delete groups | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá nhóm |
@@ -102,3 +108,10 @@ Please import postman collection and environment to use it from the `<root>/post
 | 905  | Permission denied. Only admin or company owner can update clients | Chỉ quản trị viên và quản lý có quyền cập nhật khách hàng |
 | 1000  | Invalid file type. Possible types are CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT|  Loại file không hợp lệ. Các loại file hợp lệ là CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT |
 | 1001  | Permission denied. You can't download sheets from another companies | Bạn không thể tải sheets của công ty khác |
+| 1002  | The file does not exists | Không tồn tại file |
+| 1100  | The redeem location is invalid | Vị trí đổi quà không hợp lệ |
+| 1101  | Only Adalpha Admin can view this voucher | Chỉ Adalpha admin có thể xem voucher này |
+| 1102  | Only Ad Alpha Admin can delete this voucher | Chỉ Adalpha admin có thể xoá voucher này |
+| 1103  | Only Ad Alpha Admin can edit this voucher | Chỉ Adalpha admin có thể sửa voucher này |
+| 1104  | Voucher not found | Không tìm thấy voucher |
+| 1105  | Only Ad Alpha Admin can view list voucher | Chỉ Adalpha admin có thể xem danh sách voucher |
