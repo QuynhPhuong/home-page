@@ -1,4 +1,3 @@
-
 # EzGift API
 
 ## Requirements
@@ -116,7 +115,6 @@ Please import postman collection and environment to use it from the `<root>/post
 | 805  | Permission denied. Only admin or company owner can remove employees | Chỉ quản trị viên và quản lý công ty có quyền xoá nhân viên |
 | 806  | Permission denied. Only admin or company owner can update employees | Chỉ quản trị viên và quản lý công ty có quyền cập nhật nhân viên |
 | 807  | There may be employees with duplicate emails or phone numbers | Có thể có nhân viên bị trùng lặp email hoặc số điện thoại |
-
 | 900  | Permission denied. Only admin or company owner can remove a client from its group | Chỉ quản trị viên và quản lý có quyền xoá 1 khách hàng khỏi nhóm |
 | 901  | Permission denied. Only admin or company owner can create new clients | Chỉ quản trị viên và quản lý có quyền tạo 1 khách hàng mới |
 | 902  | Invalid or missing birth date. Correct format is YYYY-MM-DD | Ngày sinh không hợp lệ hoặc trống. Định dạng đúng là YYYY-MM-DD |
@@ -124,7 +122,6 @@ Please import postman collection and environment to use it from the `<root>/post
 | 904  | Client not found| Không tìm thấy khách hàng |
 | 905  | Permission denied. Only admin or company owner can update clients | Chỉ quản trị viên và quản lý có quyền cập nhật khách hàng |
 | 906  | There may be employees with duplicate emails or phone numbers | Có thể có nhân viên bị trùng lặp email hoặc số điện thoại |
-
 | 1000  | Invalid file type. Possible types are CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT|  Loại file không hợp lệ. Các loại file hợp lệ là CAMPAIGN_ATTACHMENT, CLIENT_ATTACHMENT, EMPLOYEE_ATTACHMENT |
 | 1001  | Permission denied. You can't download sheets from another companies | Bạn không thể tải sheets của công ty khác |
 | 1002  | The file does not exists | Không tồn tại file |
