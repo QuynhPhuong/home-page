@@ -61,6 +61,11 @@ Please import postman collection and environment to use it from the `<root>/post
 | 110  | Permission denied. Only admin or company owner can remove campaigns | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá các chiến dịch |
 | 111  | This campaign can't be updated because its status is one of these: ACTIVE, PAUSE or COMPLETED | Không thể cập nhật chiến dịch này vì trang thái của nó là ACTIVE, PAUSED hoặc COMPLETED |
 | 112  | This campaign can't be upadted because its start date is same or before today | Không thể cập nhật chiến dịch này vì ngày bắt đầu chiến dịch xảy ra trước hoặc trùng với ngày hiện tại |
+| 113  | The campaign cannot be created without recipients | Chiến dịch không thể tạo mà không có người nhận |
+| 114  | Invalid quantity. Quantity must be greater than zero | Số lượng không hợp lệ. Số lượng phải lớn hơn 0 |
+| 115  | Please select some gifts | Vui lòng chọn quà tặng |
+| 116  | No recipient found | Không tìm thấy người nhận |
+| 117  | Duplicate phone number or email of recipients | Người nhận bị trùng lặp số điện thoại hoặc email |
 | 200  | Permission denied. Only admin or company owner can request a balance | Chỉ quản trị viên hoặc quản lý công ty có quyền yêu cầu 1 số dư |
 | 201  | Total budget cannot be empty, zero or negative  | Tổng ngân sách không thể trống, bằng 0 hoặc âm |
 | 202  | Permisson denied. Only admin can update balance requests | Chỉ quản trị viên có quyền sửa số dư |
@@ -82,10 +87,10 @@ Please import postman collection and environment to use it from the `<root>/post
 | 506  | Duplicate email  | Trùng lặp email |
 | 507  | Confirm password does not match new password | Mật khẩu xác nhận không trùng mật khẩu mới |
 | 508  | Invalid password code | Mã mật khẩu không hợp lệ |
-| 509  | Partner admin can only create new partner admin or partner staff | Quản trị viên đối tác chỉ có thể tạo mới người dùng quản trị viên hoặc nhân viên bên mình |
+| 509  | The partner admin can only create new users who are admin or staff members of their company | Admin đối tác chỉ có thể tạo mới người dùng là admin hoặc nhân viên thuộc công ty của mình |
 | 510  | Partner admin can only edit partner admin or partner staff | Quản trị viên đối tác chỉ có thể sửa người dùng là quản trị viên hoặc nhân viên bên mình |
 | 511  | You can't edit user from another company | Bạn không thể sửa thông tin người dùng của công ty khác |
-| 512  | Only Ad Alpha admin and partner admin can delete partner user | Chỉ Ad Alpha admin và Partner admin có quyền xoá người dùng của Partner |
+| 512  | Only partner admin can create new users for their company | Chỉ Admin đối tác có quyền tạo thêm người dùng mới cho công ty của mình |
 | 513  | The industry category is invalid | Danh mục ngành không hợp lệ |
 | 514  | Contract end date is invalid or missing. Correct format is YYYY-MM-DD | Ngày hết hạn hợp đồng không hợp lệ hoặc trống. Định dạng đúng là YYYY-MM-DD |
 | 515  | The partner type is invalid | Loại đối tác không hợp lệ |
@@ -93,6 +98,11 @@ Please import postman collection and environment to use it from the `<root>/post
 | 517  | You cannot delete user from another Partner | Bạn không thể xoá người dùng thuộc đối tác khác |
 | 518  | You cannot view other Partner information | Bạn không thể xem thông tin của bên đối tác khác |
 | 519  | You cannot edit other Partner information | Bạn không thể chỉnh sửa thông tin của bên đối tác khác |
+| 520  | Invalid contract date. Correct format is YYYY-MM-DD | Ngày hợp đồng không hợp lệ. Định dạng đúng là YYYY-MM-DD |
+| 521  | Unable to approve partner without partner type, contract date, contract number, industry, payment method or address | Không thể duyệt đối tác mà không có kiểu đối tác, ngày hợp đồng, số hợp đồng, ngành, kiểu thanh toán hoặc địa chỉ |
+| 522  | Unable to change partner status | Không thể thay đổi trạng thái partners |
+| 523  | Only Partner admin can delete users of their company | Chỉ Admin đối tác có quyền xoá nhân viên thuộc công ty của họ |
+| 524  | The partner name is missing | Tên partner bị thiếu |
 | 600  | Permission denied. Only admin or Ad alpha financial can view the companies list | Chỉ quản trị viên hoặc quản lý tài chính của Ad alpha có quyền xem danh sách các công ty  |
 | 601  | Company not found | Không tìm thấy công ty |
 | 602  | Only Ad ALpha Admin can change companies'status | Chỉ Ad Alpha Admin có quyền thay đổi trạng thái của công ty |
@@ -100,6 +110,12 @@ Please import postman collection and environment to use it from the `<root>/post
 | 604  | Invalid field isVATRequired. isVATRequired can only be boolean | Trường isVATRequired không hợp lệ. isVATRequired chỉ có định dạng boolean |
 | 605  | Pending companies can only be changed to Approved or Disapproved | Các công ty đang chờ xử lý chỉ có thể được thay đổi thành đã phê duyệt hoặc không được phê duyệt |
 | 606  | Only Ad Alpha Admin and the owner of company can edit company information | Chỉ quản trị viên và chủ công ty có quyền thay đổi thông tin công ty |
+| 607  | The company admin can only create new users who are admin or staff members of their company | Admin công ty chỉ có thể tạo mới người dùng là admin hoặc staff thuộc công ty của mình |
+| 608  | Only company admin can create new users for their company | Chỉ admin của công ty có quyền tạo mới người dùng cho công ty của họ |
+| 609  | The company name is invalid or missing | Tên công ty không hợp lệ hoặc bị thiếu |
+| 610  | Invalid field contractNumber. Contract number is required | Số hợp đồng không hợp lệ. Đây là trường bắt buộc |
+| 611  | Invalid field address. Address is required | Địa chỉ không hợp lệ. Đây là trương bắt buộc |
+| 612  | Invalid field taxCode. Tax code is required | Mã số thuế không hợp lệ. Đây là trường bắt buộc |
 | 700  | Permission denied. Only admin or company owner can see this group | Chỉ quản trị viên hoặc quản lý công ty có quyền xem thông tin nhóm |
 | 701  | Permission denied. Only admin or company owner can delete groups | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá nhóm |
 | 702  | Permission denied. Only admin or company owner can update groups | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá nhóm  |
@@ -107,6 +123,8 @@ Please import postman collection and environment to use it from the `<root>/post
 | 704  | Group not found | Không tìm thấy nhóm |
 | 705  | Group client not found | Không tìm thấy nhóm khách hàng |
 | 706  | Group name already exists. Please enter another name | Tên nhóm đã tồn tại. Vui lòng đặt tên khác |
+| 707  | Please choose group type | Xin vui lòng chọn loại nhóm |
+| 708  | Please enter group name | Xin vui lòng nhập tên nhóm |
 | 800  | Permission denied. Only admin or company owner can remove an employee from its group | Chỉ quản trị viên và quản lý công ty có quyền xoá 1 nhân viên khỏi nhóm |
 | 801  | Permission denied. Only admin or company owner can create new employees | Chỉ quản trị viên và quản lý công ty có quyền tạo 1 nhân viên mới |
 | 802  | Invalid or missing birth date/ employee date. Correct format is YYYY-MM-DD | Ngày sinh hoặc ngày bắt đầu làm việc  không hợp lệ hoặc trống. Định dạng đúng là YYYY-MM-DD |
@@ -138,7 +156,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 1110  | Customer voucher not found | Không tìm thấy customer voucher |
 | 1111  | Open link date is invalid or missing. Correct format is YYYY-MM-DD | Ngày mở liên kết không hợp lệ hoặc rỗng. Định dạng đúng là YYYY-MM-DD |
 | 1112  | Scan QR date is invalid or missing. Correct format is YYYY-MM-DD | Ngày quét mã QR không hợp lệ hoặc rỗng. Định dạng đúng là YYYY-MM-DD |
-| 1113  | Can only edit information of draft or disapproved vouchers | Chỉ có thể thay đổi thông tin của những voucher ở trạng thái bản nháp hoặc không được phê duyệt | 
+| 1113  | Can only edit information of draft, expired or disapproved vouchers | Chỉ có thể thay đổi thông tin của những voucher ở trạng thái bản nháp, hết hạn hoặc không được phê duyệt | 
 | 1114  | Current status cannot be changed | Trạng thái hiện tại không thể thay đổi | 
 | 1115  | Partner admin can only change status of a voucher from draft to submitted | Quản trị viên đối tác chỉ có thể đổi trạng thái của voucher từ bản nháp sang đã submit | 
 | 1116  | Ad Alpha admin can only change status of a voucher to submitted if it expires | Ad Alpha admin chỉ có thể đổi trạng thái của voucher sang đã submit nếu nó đã hết hạn |
@@ -149,3 +167,17 @@ Please import postman collection and environment to use it from the `<root>/post
 | 1121  | Only Draft and Disapproved vouchers can be deleted | Chỉ có thể xoá những voucher ở trạng thái Draft hoặc Disapproved |
 | 1122  | Permission denied. Only admin or partner can see statements | Chỉ admin hoặc đối tác có thể xem được các báo cáo |
 | 1123  | Not found report file | Không tìm thấy file báo cáo |
+| 1124  | Not found statement | Không tìm thấy báo cáo |
+| 1125  | Bill issued. Unable to update | Hóa đơn đã phát hành. Không thể cập nhật |
+| 1126  | You don't have permission to scan this voucher | Bạn không được phép quét voucher này |
+| 1127  | The end date is invalid or missing. Correct format is YYYY-MM-DD | Ngày kết thúc không hợp lệ hoặc chưa điền. Định dạng đúng là YYYY-MM-DD |
+| 1128  | Ad Alpha admin can only update a voucher once it has been submitted | Ad Alpha admin chỉ có thể cập nhật voucher sau khi nó đã được gửi |
+| 1129  | Partner cannot edit submitted vouchers | Đối tác không thể chỉnh sửa voucher đã được gửi |
+| 1130  | Invalid stock status | Trạng thái kho không hợp lệ |
+| 1131  | Invalid voucher status. Possible values are SUBMITTED, APPROVED, DISAPPROVED, ACTIVE, EXPIRED | Trạng thái voucher không hợp lệ. Các giá trị hợp lệ bao gồm SUBMITTED, APPROVED, DISAPPROVED, ACTIVE, EXPIRED |
+| 1132  | The voucher value is invalid | Giá trị voucher không hợp lệ |
+| 1133  | Bill ID is empty or invalid | Mã hoá đơn trống hoặc không hợp lệ |
+| 1134  | Bill date is invalid or empty | Ngày lập hoá đơn trống hoặc không hợp lệ |
+| 1135  | Voucher is out of stock | Voucher đã hết hàng |
+| 1136  | Quantity cannot be lowered | Không thể hạ thấp số lượng | 
+| 1137  | EZGIFT price is missing or invalid | Giá EZGIFT bị thiếu hoặc không hợp lệ |
