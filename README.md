@@ -105,7 +105,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 524  | The partner name is missing | Tên partner bị thiếu |
 | 600  | Permission denied. Only admin or Ad alpha financial can view the companies list | Chỉ quản trị viên hoặc quản lý tài chính của Ad alpha có quyền xem danh sách các công ty  |
 | 601  | Company not found | Không tìm thấy công ty |
-| 602  | Only Ad ALpha Admin can change companies'status | Chỉ Ad Alpha Admin có quyền thay đổi trạng thái của công ty |
+| 602  | Only Ad ALpha Admin can change companies status | Chỉ Ad Alpha Admin có quyền thay đổi trạng thái của công ty |
 | 603  | Invalid contract end date. Correct format is YYYY-MM-DD | Ngày hết hạn hợp đồng không hợp lệ. Định dạng đúng là YYYY-MM-DD |
 | 604  | Invalid field isVATRequired. isVATRequired can only be boolean | Trường isVATRequired không hợp lệ. isVATRequired chỉ có định dạng boolean |
 | 605  | Pending companies can only be changed to Approved or Disapproved | Các công ty đang chờ xử lý chỉ có thể được thay đổi thành đã phê duyệt hoặc không được phê duyệt |
