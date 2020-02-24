@@ -60,7 +60,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 109  | Permission denied. Only admin or company owner can update campaigns | Chỉ quản trị viên hoặc quản lý công ty có quyền cập nhật các chiến dịch |
 | 110  | Permission denied. Only admin or company owner can remove campaigns | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá các chiến dịch |
 | 111  | This campaign can't be updated because its status is one of these: ACTIVE, PAUSE or COMPLETED | Không thể cập nhật chiến dịch này vì trang thái của nó là ACTIVE, PAUSED hoặc COMPLETED |
-| 112  | This campaign can't be upadted because its start date is same or before today | Không thể cập nhật chiến dịch này vì ngày bắt đầu chiến dịch xảy ra trước hoặc trùng với ngày hiện tại |
+| 112  | This campaign can't be updated because its start date is same or before today | Không thể cập nhật chiến dịch này vì ngày bắt đầu chiến dịch xảy ra trước hoặc trùng với ngày hiện tại |
 | 113  | The campaign cannot be created without recipients | Chiến dịch không thể tạo mà không có người nhận |
 | 114  | Invalid quantity. Quantity must be greater than zero | Số lượng không hợp lệ. Số lượng phải lớn hơn 0 |
 | 115  | Please select some gifts | Vui lòng chọn quà tặng |
@@ -74,7 +74,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 205  | Invalid status. Possible values are APPROVED, DENIED | Trạng thái không hợp lệ. Các giá trị hợp lệ bao gồm APPROVED, DENIED |
 | 206  | Permisson denied. Only admin or company owner can view the balance requests | Chỉ quản trị viên hoặc quản lý công ty có quyền xem các số dư được yêu cầu |
 | 207  | You can't delete this balance request | Bạn không thể xoá yêu cầu số dư này |
-| 208  | Invalid billAt. Correct format is YYYY-MM-DD | Trường billAt không hợp lệ. Định dạng đúng là YYYY-MM-DD |
+| 208  | Invalid billDate. Correct format is YYYY-MM-DD | Trường billDate không hợp lệ. Định dạng đúng là YYYY-MM-DD |
 | 209  | Bill status can only be changed from PENDING to ISSUED | Trạng thái của hoá đơn chỉ có thể thay đổi từ PENDING sang ISSUED | 
 | 300  | Permission denied. Only admin can view rewards list | Chỉ quản trị viên có quyền xem danh sách thưởng |
 | 400  | Permission denied. Only admin or company owner can view the topups list | Chỉ quản trị viên hoặc quản lý công ty có quyền xem danh sách trả thưởng |
@@ -103,9 +103,10 @@ Please import postman collection and environment to use it from the `<root>/post
 | 522  | Unable to change partner status | Không thể thay đổi trạng thái partners |
 | 523  | Only Partner admin can delete users of their company | Chỉ Admin đối tác có quyền xoá nhân viên thuộc công ty của họ |
 | 524  | The partner name is missing | Tên partner bị thiếu |
+| 525  | The payment method is invalid | Phương thức thanh toán không hợp lệ |
 | 600  | Permission denied. Only admin or Ad alpha financial can view the companies list | Chỉ quản trị viên hoặc quản lý tài chính của Ad alpha có quyền xem danh sách các công ty  |
 | 601  | Company not found | Không tìm thấy công ty |
-| 602  | Only Ad ALpha Admin can change companies status | Chỉ Ad Alpha Admin có quyền thay đổi trạng thái của công ty |
+| 602  | Only Ad Alpha Admin can change companies status | Chỉ Ad Alpha Admin có quyền thay đổi trạng thái của công ty |
 | 603  | Invalid contract end date. Correct format is YYYY-MM-DD | Ngày hết hạn hợp đồng không hợp lệ. Định dạng đúng là YYYY-MM-DD |
 | 604  | Invalid field isVATRequired. isVATRequired can only be boolean | Trường isVATRequired không hợp lệ. isVATRequired chỉ có định dạng boolean |
 | 605  | Pending companies can only be changed to Approved or Disapproved | Các công ty đang chờ xử lý chỉ có thể được thay đổi thành đã phê duyệt hoặc không được phê duyệt |
@@ -116,6 +117,7 @@ Please import postman collection and environment to use it from the `<root>/post
 | 610  | Invalid field contractNumber. Contract number is required | Số hợp đồng không hợp lệ. Đây là trường bắt buộc |
 | 611  | Invalid field address. Address is required | Địa chỉ không hợp lệ. Đây là trương bắt buộc |
 | 612  | Invalid field taxCode. Tax code is required | Mã số thuế không hợp lệ. Đây là trường bắt buộc |
+| 613  | Only Ad Alpha admin can create new Ad Alpha users | Chỉ admin Ad Alpha có quyển tạo mới người dùng của Ad Alpha |
 | 700  | Permission denied. Only admin or company owner can see this group | Chỉ quản trị viên hoặc quản lý công ty có quyền xem thông tin nhóm |
 | 701  | Permission denied. Only admin or company owner can delete groups | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá nhóm |
 | 702  | Permission denied. Only admin or company owner can update groups | Chỉ quản trị viên hoặc quản lý công ty có quyền xoá nhóm  |
@@ -133,6 +135,8 @@ Please import postman collection and environment to use it from the `<root>/post
 | 805  | Permission denied. Only admin or company owner can remove employees | Chỉ quản trị viên và quản lý công ty có quyền xoá nhân viên |
 | 806  | Permission denied. Only admin or company owner can update employees | Chỉ quản trị viên và quản lý công ty có quyền cập nhật nhân viên |
 | 807  | There may be employees with duplicate emails or phone numbers | Có thể có nhân viên bị trùng lặp email hoặc số điện thoại |
+| 808  | Email is invalid or missing | Email không hợp lệ hoặc thiếu |
+| 809  | Phone number is invalid or missing | Số điện thoại không hợp lệ hoặc thiếu |
 | 900  | Permission denied. Only admin or company owner can remove a client from its group | Chỉ quản trị viên và quản lý có quyền xoá 1 khách hàng khỏi nhóm |
 | 901  | Permission denied. Only admin or company owner can create new clients | Chỉ quản trị viên và quản lý có quyền tạo 1 khách hàng mới |
 | 902  | Invalid or missing birth date. Correct format is YYYY-MM-DD | Ngày sinh không hợp lệ hoặc trống. Định dạng đúng là YYYY-MM-DD |
@@ -177,7 +181,9 @@ Please import postman collection and environment to use it from the `<root>/post
 | 1131  | Invalid voucher status. Possible values are SUBMITTED, APPROVED, DISAPPROVED, ACTIVE, EXPIRED | Trạng thái voucher không hợp lệ. Các giá trị hợp lệ bao gồm SUBMITTED, APPROVED, DISAPPROVED, ACTIVE, EXPIRED |
 | 1132  | The voucher value is invalid | Giá trị voucher không hợp lệ |
 | 1133  | Bill ID is empty or invalid | Mã hoá đơn trống hoặc không hợp lệ |
-| 1134  | Bill date is invalid or empty | Ngày lập hoá đơn trống hoặc không hợp lệ |
+| 1134  | Bill date is invalid or empty. Correct format is YYYY-MM-DD | Ngày lập hoá đơn trống hoặc không hợp lệ. Định dạng đúng là YYYY-MM-DD |
 | 1135  | Voucher is out of stock | Voucher đã hết hàng |
 | 1136  | Quantity cannot be lowered | Không thể hạ thấp số lượng | 
 | 1137  | EZGIFT price is missing or invalid | Giá EZGIFT bị thiếu hoặc không hợp lệ |
+| 1138  | Invalid bill status. You can only change the bill status from PENDING to ISSUED | Trạng thái không hợp lệ. Bạn chỉ có thể thay đổi trạng thái hoá đơn từ "đang chờ xử lí" sang "đã ban hành"|
+| 1139  | Invalid bill status. Possible values are PENDING and ISSUED | Trạng thái không hợp lệ. Các giá trị hơp lệ là PENDING và ISSUED |
